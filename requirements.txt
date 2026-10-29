@@ -1,0 +1,18 @@
+# Runtime
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Settings
+pydantic>=2.11.0
+pydantic-settings>=2.7.0
+
+# Database
+sqlalchemy>=2.0.37  # 2.0.36 has Optional[list[T]] bug on Python 3.14; 2.1.x is the 2.0 series successor.
+psycopg[binary]>=3.2.10
+alembic==1.14.0
+
+# Utils
+python-dotenv==1.0.1
+
+# pgvector SQLAlchemy integration (cho embedding columns)
+pgvector==0.4.1
